@@ -14,4 +14,4 @@ Import the libraries matplotlib,pandas,numpy.Create a dataframe for SQL query.Ad
 Plot by horizontal bar graph which compares the sales data for last year and current year.
 For further understanding plot pie chart forSales last Yar and SalesYTD using corresponding codes in visual studio code.
 
-
+	![alt text here](https://github.com/Lakshmi1708/Adventure-Works2019/blob/main/images/SQL%20_1.PNG)
