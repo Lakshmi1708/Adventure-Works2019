@@ -59,3 +59,34 @@ Save the query Creating View and import the data to python using Jupiter Noteboo
 To visualise the data and find the relationship between them, we will use scatter plot ( Matplotlib) 
 
 ![](images/AnnualLeave_3.png)
+
+**What is the relationship between sick leave and Job Title?**
+Get the table HumanResources.Employee
+
+Firstly, get two columns JobTitle and SickLeaveHours
+
+Use aggregate function (AVG) to calculate average sick leave hours for each job title
+
+Group them by JobTitle 
+
+![](images/SickLeave_SQl_4.PNG)
+
+Secondly, get three columns JobTitle, SickLeaveHours and OrganizationLevel, the same as in first query use AVG function to calculate average sick leave hours
+Save the queries.
+
+Create view for both of them
+
+![](images/SickLeave_ORglevel_SQl_4.PNG)
+
+Create new file in JupyterNotebook and import view from SQL Server
+
+Import libraries - matplotlib, pandas, numpy, seaborn
+
+With first query, I visualise relationship between job titles and sick leave hours with  bar plot (Matplotlib)
+![](images/Q4.Visual1.png)
+
+With the second query, I visualise the relationship between job titles, sick leave hours and organisation level. 
+![](images/Q4.Visual2.pngg)
+![](images/Q4.Visual3.png)
+
+![](images/Q4.Visual4.png)
