@@ -33,12 +33,31 @@ Firstly, we need to find the data of sales per country in the Sales.SalesTerrito
 
 Secondly, calculate the sales by regions of the highest performing country in SQL using SUM(), GROUP BY() and WHERE. At this step, we have the table we needed. Create a view for this. Called Regional_Sales.
 
+![](images/RegionalSales_US_2.PNG)
 
 Thirdly, import the Regional_Sales table to Jupiper Note using pyodbc and create a DataFrame. Importing other libraries including pandas, matplotlib, pyplot, numpy, and json for further use.
 
 To visualise the data, we’ll go with bar chart (Matplotlib) to show the total sales of each region and compare the value of sales YTD and last year. This could be done using Matplotlib. The chart helps show the differences between the two years but can’t see the YOY and percentage.
+![](images/Q1.Regional_Sales_Double_Bar_Chart_Megan_bo.png)
 
 We’ll then use double pie charts to plot the dataset into two separate pies/donuts that contain the percentage of each year and the pies’ size also illustrate the scale of sales each year. To make the visual look good and interactive, we could us pyplot that offer the flexibility.
 
+![](images/Piechart_US_sales_2.PNG)
 
+**What is the relationship between annual leave taken and bonus?**
 
+First step is to find  the tables in Adventure works database  which has annual leave(VacationHours) and Bonus columns.
+
+The 2 identified tables are HumanResources.Employee and Sales.SalesPerson. 
+
+INNER JOIN them on the common column BusinessEntityID.
+![](images/AnnualLeaveVsBonus_SQL3.PNG)
+
+Save the query Creating View and import the data to python using Jupiter Notebook.
+![](images/AnnualLeaveVsBonus_pyodbc.PNG)
+
+To visualise the data and find the relationship between them, we will use scatter plot ( Matplotlib) 
+
+![](images/AnnualLeavevsBonus-2.png)
+
+![](images/AnnualLeavevsBonus-2.png)
