@@ -58,6 +58,4 @@ Save the query Creating View and import the data to python using Jupiter Noteboo
 
 To visualise the data and find the relationship between them, we will use scatter plot ( Matplotlib) 
 
-![](images/AnnualLeavevsBonus-2.png)
-
-![](images/AnnualLeavevsBonus-2.png)
+![](images/AnnualLeave_3.png)
