@@ -30,8 +30,15 @@ For further understanding plot pie chart forSales last Year and SalesYTD using c
 **2.What is the regional sales in the best performing country?**
 
 Firstly, we need to find the data of sales per country in the Sales.SalesTerritory table, Sales YTD, Sales Last Year columns and define the highest performing country by SQL using SUM(), MAX() and GROUP BY function. Create a view for that. 
-Secondly, calculate the sales by regions of the highest performing country in SQL using SUM(), GROUP BY() and WHERE. At this step, we have the table we needed. Create a view for this. Called Regional_Sales
+
+Secondly, calculate the sales by regions of the highest performing country in SQL using SUM(), GROUP BY() and WHERE. At this step, we have the table we needed. Create a view for this. Called Regional_Sales.
+
+
 Thirdly, import the Regional_Sales table to Jupiper Note using pyodbc and create a DataFrame. Importing other libraries including pandas, matplotlib, pyplot, numpy, and json for further use.
+
 To visualise the data, we’ll go with bar chart (Matplotlib) to show the total sales of each region and compare the value of sales YTD and last year. This could be done using Matplotlib. The chart helps show the differences between the two years but can’t see the YOY and percentage.
+
 We’ll then use double pie charts to plot the dataset into two separate pies/donuts that contain the percentage of each year and the pies’ size also illustrate the scale of sales each year. To make the visual look good and interactive, we could us pyplot that offer the flexibility.
-To answer the question in term of geography, we could also plot the data by US map. This could be complicated. Started first by imported the geojson values of US map (this could be valuable on the internet). The next step is to create an excel file that contain values of state names, sales YTD and Last year, called regional_sales_us. Next we could extract a dictionary that contain the name and id of each state of the US to later on link the id with regional_sales_us by using lambda x. Make sure we created an id column in regional_sales_us, we could later link them to the geojson file. Plot the map using plotly.express.choropleph() with the location = regional_sales_us[id]. Plot 2 maps for YTD and Last Year 
+
+
+
