@@ -44,7 +44,7 @@ We’ll then use double pie charts to plot the dataset into two separate pies/do
 
 ![](images/Piechart_US_sales_2.PNG)
 
-**What is the relationship between annual leave taken and bonus?**
+**3.What is the relationship between annual leave taken and bonus?**
 
 First step is to find  the tables in Adventure works database  which has annual leave(VacationHours) and Bonus columns.
 
@@ -60,7 +60,7 @@ To visualise the data and find the relationship between them, we will use scatte
 
 ![](images/AnnualLeave_3.png)
 
-**What is the relationship between sick leave and Job Title?**
+**4.What is the relationship between sick leave and Job Title?**
 Get the table HumanResources.Employee
 
 Firstly, get two columns JobTitle and SickLeaveHours
@@ -90,3 +90,18 @@ With the second query, I visualise the relationship between job titles, sick lea
 ![](images/Q4.Visual3.png)
 
 ![](images/Q4.Visual4.png)
+
+**5.What is the relationship between store trading duration and revenue?**
+
+Write SQL code to get data frame we need. GROUP BY year opened, use AVG() for the Annual Revenue for each year group, create a new column trading_duration by subtracting year opened from 2014 ( as 2014 is current year for the database). 
+Create a view duration_vs_rev
+![](images/DurationVsRevenue_SQL_5.PNG)
+In Visual Code Studio import pyodbc, matplotlib.pyplot, pandas, numpy and seaborn.
+Import the view to Visual Code Studio
+![](images/DurationVsRevenue_pyodbc_5.PNG)
+Create a graph using matplotlib - the choice of  a scatter plot is defined by the task to find the relationship between two numerical sets of data.
+Run corr() function to verify conclusion made on the base of the scatter plot.
+
+![](images/Slide1.png)
+
+
